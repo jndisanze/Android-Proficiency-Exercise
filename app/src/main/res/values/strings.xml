@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConsumesREST</string>
+    <string name="root_url">https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/</string>
+    <string name="json_file">facts.json</string>
+</resources>
