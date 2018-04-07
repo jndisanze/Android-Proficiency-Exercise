@@ -1,4 +1,4 @@
-package au.com.consumes.jeanpaul.consumesrest;
+package au.com.consumes.jeanpaul.consumesrest.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -17,6 +17,7 @@ public class Row {
 
     /**
      * This method return array of description
+     *
      * @return
      */
     public String getTitle() {
@@ -25,6 +26,7 @@ public class Row {
 
     /**
      * This set return array of description
+     *
      * @param title
      */
     public void setTitle(String title) {
@@ -33,6 +35,7 @@ public class Row {
 
     /**
      * This method return the description
+     *
      * @return
      */
     public String getDescription() {
@@ -41,6 +44,7 @@ public class Row {
 
     /**
      * This method return the description
+     *
      * @param description
      */
     public void setDescription(String description) {
@@ -49,6 +53,7 @@ public class Row {
 
     /**
      * This method return url/ref of image
+     *
      * @return
      */
     public String getImageHref() {
@@ -61,12 +66,13 @@ public class Row {
     public void setImageHref() {
         setImageHref();
     }
+
     /**
      * This method set url/ref of image
+     *
      * @param imageHref
      */
     public void setImageHref(String imageHref) {
         this.imageHref = imageHref;
     }
-
 }

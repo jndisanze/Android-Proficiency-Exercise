@@ -1,10 +1,16 @@
-package au.com.consumes.jeanpaul.consumesrest;
+package au.com.consumes.jeanpaul.consumesrest.models;
 
+import android.content.Context;
+
+import au.com.consumes.jeanpaul.consumesrest.R;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetroClient {
-    private static final String ROOT_URL = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/";
+    private static  String ROOT_URL;
+    public RetroClient(String urlRoot){
+        this.ROOT_URL = urlRoot;
+    }
     /**
      * Thi Get Retrofit Instance
      * @return

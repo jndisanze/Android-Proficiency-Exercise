@@ -10,6 +10,10 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 
 import au.com.consumes.jeanpaul.consumesrest.Adapter.RowAdapter;
+import au.com.consumes.jeanpaul.consumesrest.models.ApiService;
+import au.com.consumes.jeanpaul.consumesrest.models.RetroClient;
+import au.com.consumes.jeanpaul.consumesrest.models.Row;
+import au.com.consumes.jeanpaul.consumesrest.models.RowLists;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -26,13 +30,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         pDialog = new ProgressDialog(MainActivity.this);
-        pDialog.setMessage("JeanP Sys Loading Data.. Please wait...");
+        pDialog.setMessage(getString(R.string.loading));
         pDialog.setIndeterminate(false);
         pDialog.setCancelable(false);
         pDialog.show();
-
-        ApiService api = RetroClient.getApiService();
+        //Creating an object of our api interface
+        RetroClient retroClient = new RetroClient(getString(R.string.root_url));
+        ApiService api = retroClient.getApiService();
+        /**
+         * Calling JSON
+         */
         Call<RowLists> call = api.getMyJSON();
+        /**
+         * Enqueue Callback will be call when get response...
+         */
         call.enqueue(new Callback<RowLists>() {
             @Override
             public void onResponse(Call<RowLists> call, Response<RowLists> response) {

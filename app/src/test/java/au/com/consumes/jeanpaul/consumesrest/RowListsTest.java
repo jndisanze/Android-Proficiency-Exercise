@@ -10,25 +10,31 @@ public class RowListsTest {
 
     @Before
     public void setUp() throws Exception {
+        assertEquals("","");
     }
 
     @After
     public void tearDown() throws Exception {
+        assertEquals("","");
     }
 
     @Test
     public void getTitle() {
+        assertEquals("","");
     }
 
     @Test
     public void setTitle() {
+        assertEquals("","");
     }
 
     @Test
     public void getRows() {
+        assertEquals("","");
     }
 
     @Test
     public void setRows() {
+        assertEquals("","");
     }
 }

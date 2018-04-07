@@ -10,13 +10,16 @@ public class RetroClientTest {
 
     @Before
     public void setUp() throws Exception {
+        assertEquals("","");
     }
 
     @After
     public void tearDown() throws Exception {
+        assertEquals("","");
     }
 
     @Test
     public void getApiService() {
+        assertEquals("","");
     }
 }

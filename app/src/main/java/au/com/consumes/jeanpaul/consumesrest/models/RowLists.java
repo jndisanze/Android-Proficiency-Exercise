@@ -1,8 +1,9 @@
-package au.com.consumes.jeanpaul.consumesrest;
+package au.com.consumes.jeanpaul.consumesrest.models;
 
-import java.util.ArrayList;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
+import java.util.ArrayList;
 
 public class RowLists {
 
