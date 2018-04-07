@@ -1,10 +1,22 @@
 package au.com.consumes.jeanpaul.consumesrest.models;
-
+/*******************************************************************************
+ * Copyright (c) 2018 Ndisanze jean Paul.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Lesser Public License v2.1
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ *
+ * Contributors:
+ *     Ndisanze jean Paul. - initial API and implementation
+ ******************************************************************************/
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
+/**
+ * class modeling list of Row
+ */
 public class RowLists {
 
     @SerializedName("title")

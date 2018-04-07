@@ -1,5 +1,14 @@
 package au.com.consumes.jeanpaul.consumesrest;
-
+/*******************************************************************************
+ * Copyright (c) 2018 Ndisanze jean Paul.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Lesser Public License v2.1
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ *
+ * Contributors:
+ *     Ndisanze jean Paul. - initial API and implementation
+ ******************************************************************************/
 import android.app.ProgressDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,6 +27,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * MainActivity class
+ */
 public class MainActivity extends AppCompatActivity {
 
     private ArrayList<Row> rowList;

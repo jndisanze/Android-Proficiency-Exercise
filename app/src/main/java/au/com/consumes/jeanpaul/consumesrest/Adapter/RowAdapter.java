@@ -1,5 +1,14 @@
 package au.com.consumes.jeanpaul.consumesrest.Adapter;
-
+/*******************************************************************************
+ * Copyright (c) 2018 Ndisanze jean Paul.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Lesser Public License v2.1
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ *
+ * Contributors:
+ *     Ndisanze jean Paul. - initial API and implementation
+ ******************************************************************************/
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -15,7 +24,10 @@ import java.util.ArrayList;
 import au.com.consumes.jeanpaul.consumesrest.R;
 import au.com.consumes.jeanpaul.consumesrest.models.ApiService;
 import au.com.consumes.jeanpaul.consumesrest.models.Row;
-
+/**
+ * the adapter for the RecyclerView
+ * in order to display the parsed data from Url
+ * */
 public class RowAdapter extends RecyclerView.Adapter<RowAdapter.CustomViewHolder> {
     private ArrayList<Row> rowListList;
     private Context context;
